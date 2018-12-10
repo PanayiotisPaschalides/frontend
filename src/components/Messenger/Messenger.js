@@ -228,7 +228,7 @@ class Messenger extends Component {
                             {chat.id === this.state.ActiveChat ? (
                                 <div className='advertItems'>
                             <div className='AdvertInitialImg'>
-                            {chat.by_user === this.state.logUser?<label className='AdvertInitialChar'>{chat.to_user[0].toUpperCase()}</label>: <label>{chat.by_user[0].toUpperCase()}</label>}
+                            {chat.by_user === this.state.logUser?<label className='AdvertInitialChar'>{chat.to_user[0].toUpperCase()}</label>: <label className='AdvertInitialChar'>{chat.by_user[0].toUpperCase()}</label>}
                             </div>
                             <div className='AdvertDetails'><label className='AdvertTitle' onClick={() => this.OpenAdvert(chat.advert_id)}>{chat.advert_title}</label>
                             <label className='AdvertPrice'> £{chat.advert_price}</label>
